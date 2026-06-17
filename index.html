@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Rajashekar Yadav - Advocate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Offcanvas Mobile Menu -->
+    <div id="offcanvas-backdrop" class="offcanvas-backdrop"></div>
+    <div id="offcanvas-menu" class="offcanvas-menu">
+        <div class="offcanvas-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-scale-balanced"></i>
+                </div>
+                <div class="logo-text">
+                    <h3>J. Rajashekar Yadav</h3>
+                    <p>ADVOCATE</p>
+                </div>
+            </div>
+            <button id="offcanvas-close" class="offcanvas-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="offcanvas-nav">
+            <a href="#home" class="offcanvas-nav-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="offcanvas-nav-link">
+                <i class="fas fa-user-tie"></i>
+                <span>About Us</span>
+            </a>
+            <a href="#services" class="offcanvas-nav-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Services</span>
+            </a>
+            <a href="#contact" class="offcanvas-nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
+        <div class="offcanvas-footer">
+            <p style="font-size: 0.75rem; color: #64748b; font-weight: 600; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Quick Connect</p>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <a href="tel:8341760104" class="btn btn-white" style="width: 100%;">
+                    <i class="fas fa-phone-alt"></i>
+                    Call Now: 8341760104
+                </a>
+                <a href="https://wa.me/918341760104?text=Hello%20Advocate%20J.%20Rajashekar%20Yadav%2C%20I%20need%20legal%20consultation." target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp Chat
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h3>J. Rajashekar Yadav</h3>
+                        <p>ADVOCATE</p>
+                    </div>
+                </div>
+
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <div style="position: relative;">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="tel:8341760104" class="available-badge" style="top: -20px; right: -56px;">
+                            Available Now
+                        </a>
+                    </div>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="tel:8341760104" class="btn btn-white">
+                        <i class="fas fa-phone-alt" style="font-size: 0.75rem;"></i>
+                        Call
+                    </a>
+                    <a href="https://wa.me/918341760104?text=Hello%20Advocate%20J.%20Rajashekar%20Yadav%2C%20I%20need%20legal%20consultation." target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="mobile-menu-btn" type="button">
+                    <i class="fas fa-bars"></i>
+                    <span class="available-badge" style="top: -4px; right: -4px; font-size: 9px; padding: 1px 6px;">
+                        <span style="width: 4px; height: 4px; background: white; border-radius: 50%;"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="quote-container">
+                        <div style="position: relative; width: 100%;">
+                            <p id="quote-text" class="quote-text" style="opacity: 1;">"Justice delayed is justice denied"</p>
+                            <div id="quote-dots" class="quote-dots">
+                                <button class="quote-dot active" data-quote="0"></button>
+                                <button class="quote-dot" data-quote="1"></button>
+                                <button class="quote-dot" data-quote="2"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span id="typewriter-name" class="typewriter"></span><span id="cursor" class="cursor" style="display: none;"></span>
+                    </h1>
+                    <div class="hero-badge">
+                        ADVOCATE
+                    </div>
+                    <p class="hero-subtitle">
+                        Dedicated to Justice &amp; Client Satisfaction
+                    </p>
+                    <div class="hero-buttons">
+                        <button id="open-inquiry-btn" class="btn btn-primary">
+                            <i class="fas fa-clipboard-check"></i>
+                            Free Case Evaluation
+                        </button>
+                        <a href="tel:8341760104" class="btn btn-outline">
+                            <i class="fas fa-phone-alt"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-card-wrapper">
+                    <div class="hero-card-bg"></div>
+                    <div class="hero-card stack-card active">
+                        <div class="hero-card-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 class="hero-card-title">Trusted Legal Counsel</h3>
+                        <p class="hero-card-text">Experienced advocacy for civil, criminal, and corporate matters.</p>
+                        <div class="hero-features">
+                            <div class="feature-item feature-blue">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert Legal Guidance</span>
+                            </div>
+                            <div class="feature-item feature-green">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Strategic Case Approach</span>
+                            </div>
+                            <div class="feature-item feature-red">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Client-First Approach</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-card stack-card">
+                        <div class="hero-card-icon" style="background: linear-gradient(to bottom right, var(--red) 0%, #7f1d1d 100%);">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3 class="hero-card-title">Strong Litigation Support</h3>
+                        <p class="hero-card-text">Careful case preparation, courtroom strategy, and clear communication.</p>
+                        <div class="hero-features">
+                            <div class="feature-item feature-red">
+                                <i class="fas fa-file-signature"></i>
+                                <span>Document Review</span>
+                            </div>
+                            <div class="feature-item feature-blue">
+                                <i class="fas fa-scale-balanced"></i>
+                                <span>Case Strategy</span>
+                            </div>
+                            <div class="feature-item feature-green">
+                                <i class="fas fa-comments"></i>
+                                <span>Client Updates</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-card stack-card">
+                        <div class="hero-card-icon" style="background: linear-gradient(to bottom right, var(--green) 0%, #166534 100%);">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="hero-card-title">Personalized Support</h3>
+                        <p class="hero-card-text">Responsive legal help designed around your concerns and priorities.</p>
+                        <div class="hero-features">
+                            <div class="feature-item feature-green">
+                                <i class="fas fa-clock"></i>
+                                <span>Quick Consultation</span>
+                            </div>
+                            <div class="feature-item feature-blue">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Direct Access</span>
+                            </div>
+                            <div class="feature-item feature-red">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Confidential Advice</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-stack-dots">
+                        <button class="hero-stack-dot active" data-hero-slide="0"></button>
+                        <button class="hero-stack-dot" data-hero-slide="1"></button>
+                        <button class="hero-stack-dot" data-hero-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-description">
+                    Committed to delivering excellence in legal services with integrity, professionalism, and unwavering dedication to justice.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div>
+                    <div class="about-card-wrapper">
+                        <div class="about-card">
+                            <div class="about-profile">
+                                <div class="profile-icon">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div>
+                                    <h3 class="profile-name">J. Rajashekar Yadav</h3>
+                                    <p class="profile-title">Advocate &amp; Legal Consultant</p>
+                                </div>
+                            </div>
+                            <p class="about-text">
+                                With distinguished legal practice experience, I have established myself as a trusted advocate committed to upholding justice and protecting client interests across diverse legal domains.
+                            </p>
+                            <p class="about-text">
+                                My practice is built on the foundations of thorough legal research, strategic litigation, and personalized client attention. I believe in making legal services accessible and understandable for every client.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="values-header">
+                        <h4 class="values-title">Core Values</h4>
+                        <p class="values-subtitle">Auto-rotating • Drag to interact or tap dots below</p>
+                    </div>
+                    <div class="carousel-3d-container" id="carousel-3d-container">
+                        <div class="carousel-3d" id="carousel-3d">
+                            <div class="carousel-3d-card" style="transform: rotateY(0deg) translateZ(140px); opacity: 1; z-index: 10;">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h4>Honesty</h4>
+                                <p>Transparent legal advice and clear communication throughout your case</p>
+                            </div>
+                            <div class="carousel-3d-card" style="transform: rotateY(90deg) translateZ(140px); opacity: 0.3; z-index: 1;">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-shield-halved"></i>
+                                </div>
+                                <h4>Integrity</h4>
+                                <p>Ethical practice with unwavering moral principles in every proceeding</p>
+                            </div>
+                            <div class="carousel-3d-card" style="transform: rotateY(180deg) translateZ(140px); opacity: 0.6; z-index: 5;">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <h4>Dedication</h4>
+                                <p>Committed to every case with full attention and persistent effort</p>
+                            </div>
+                            <div class="carousel-3d-card" style="transform: rotateY(270deg) translateZ(140px); opacity: 0.3; z-index: 1;">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <h4>Results</h4>
+                                <p>Focused on achieving the best outcome for clients through strategy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-3d-controls">
+                        <button class="carousel-3d-dot active" data-index="0"></button>
+                        <button class="carousel-3d-dot" data-index="1"></button>
+                        <button class="carousel-3d-dot" data-index="2"></button>
+                        <button class="carousel-3d-dot" data-index="3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">
+                    Comprehensive legal solutions tailored to meet your specific needs across multiple practice areas.
+                </p>
+            </div>
+
+            <div class="services-header">
+                <p class="services-hint mobile">
+                    <i class="fas fa-hand-pointer"></i>
+                    <span>Scroll to browse</span>
+                </p>
+                <p class="services-hint" style="display: none;">
+                    <i class="fas fa-hand-pointer"></i>
+                    <span>Swipe or use arrows to browse</span>
+                </p>
+                <div class="services-controls">
+                    <button id="services-prev" class="service-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="services-next" class="service-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="services-carousel" class="services-carousel">
+                <div class="service-card" data-service="Civil Litigation">
+                    <div class="service-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="service-title">Civil Litigation</h3>
+                    <p class="service-description">
+                        Expert representation in civil disputes, property matters, contract disputes, and civil rights cases with strategic litigation approach and thorough case preparation.
+                    </p>
+                    <div class="service-footer">
+                        <span>Tap to inquire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="Criminal Defense">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Criminal Defense</h3>
+                    <p class="service-description">
+                        Dedicated criminal defense services including bail matters, trial representation, and appeals with focus on protecting your rights and ensuring fair trial procedures.
+                    </p>
+                    <div class="service-footer">
+                        <span>Tap to inquire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="Family Law">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Family Law</h3>
+                    <p class="service-description">
+                        Compassionate handling of divorce, child custody, maintenance, domestic violence, and matrimonial disputes with sensitivity and confidentiality throughout proceedings.
+                    </p>
+                    <div class="service-footer">
+                        <span>Tap to inquire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="Corporate Law">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="service-title">Corporate Law</h3>
+                    <p class="service-description">
+                        Comprehensive corporate legal services including company formation, compliance, contracts, mergers, acquisitions, and business litigation for enterprises and startups.
+                    </p>
+                    <div class="service-footer">
+                        <span>Tap to inquire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="Property Law">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title">Property Law</h3>
+                    <p class="service-description">
+                        Property registration, title verification, land disputes, tenant-landlord matters, real estate documentation services, and guidance through complex property transactions.
+                    </p>
+                    <div class="service-footer">
+                        <span>Tap to inquire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="Consumer Protection">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="service-title">Consumer Protection</h3>
+                    <p class="service-description">
+                        Fighting for consumer rights, defective products, deficiency in services, and unfair trade practices under Consumer Protection Act with dedicated case representation.
+                    </p>
+                    <div class="service-footer">
+                        <span>Tap to inquire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="Motor Accident Claims (MACT)">
+                    <div class="service-icon">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <h3 class="service-title">Motor Accident Claims (MACT)</h3>
+                    <p class="service-description">
+                        Compensation for Injuries, Disability &amp; Fatal Accidents. Expert representation for victims and families seeking justice and rightful compensation under MACT cases.
+                    </p>
+                    <div class="service-footer">
+                        <span>Tap to inquire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="Agreements &amp; Documentation">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="service-title">Agreements &amp; Documentation</h3>
+                    <p class="service-description">
+                        Professional drafting, vetting, and registration of legal documents, agreements, contracts, deeds, and powers of attorney with precise legal terminology and compliance.
+                    </p>
+                    <div class="service-footer">
+                        <span>Tap to inquire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta">
+                <button id="open-inquiry-btn-2" class="btn btn-primary" style="padding: 0.75rem 2rem; font-size: 1rem;">
+                    <i class="fas fa-calendar-check"></i>
+                    Schedule Free Consultation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">
+                    Reach out today for a confidential consultation. We're here to help you navigate your legal challenges.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-box">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon red">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Call Us</p>
+                                    <a href="tel:8341760104" class="contact-value">8341760104</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon green">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">WhatsApp</p>
+                                    <a href="https://wa.me/918341760104?text=Hello%20Advocate%20J.%20Rajashekar%20Yadav%2C%20I%20need%20legal%20consultation." target="_blank" class="contact-value">Chat Now</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon white">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value"><a href="mailto:lawyerrajs@gmail.com" class="contact-value">lawyerrajs@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon white">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Location</p>
+                                    <p class="contact-value">H. No: 1-7-1002/37, 1<sup>st</sup> Floor, Ramnagar VST Road, Hyderabad - 500020</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon white">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Office Hours</p>
+                                    <p class="contact-value">Mon - Sat: 9:00 AM - 7:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="security-box">
+                        <div class="security-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Confidential &amp; Secure</h4>
+                        </div>
+                        <p class="security-text">
+                            All communications are strictly confidential and protected by attorney-client privilege. Your privacy is our utmost priority.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <div class="map-card">
+                        <div class="map-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Office Location</h3>
+                        </div>
+                        <iframe class="map-iframe"
+                            src="https://www.google.com/maps?q=H.NO%3A%201-7-1002%2F37%2C%201st%20Floor%2C%20Ramnagar%20VST%20Road%2C%20Hyderabad%20500020&amp;z=15&amp;output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen="">
+                        </iframe>
+                    </div>
+
+                    <div class="form-box">
+                        <h3 class="form-title">Send Us Your Inquiry</h3>
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" id="name" name="name" required="" class="form-input" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required="" class="form-input" placeholder="Your Phone">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" required="" class="form-input" placeholder="your.email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="case-type" class="form-label">Case Type</label>
+                                <select id="case-type" name="case-type" class="form-select">
+                                    <option value="">Select Case Type</option>
+                                    <option value="Civil Litigation">Civil Litigation</option>
+                                    <option value="Criminal Defense">Criminal Defense</option>
+                                    <option value="Corporate Law">Corporate Law</option>
+                                    <option value="Property Law">Property Law</option>
+                                    <option value="Motor Accident Claims (MACT)">Motor Accident Claims (MACT)</option>
+                                    <option value="Agreements &amp; Documentation">Agreements &amp; Documentation</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Case Details *</label>
+                                <textarea id="message" name="message" rows="5" required="" class="form-textarea" placeholder="Please describe your legal matter in detail..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-whatsapp form-submit">
+                                <i class="fab fa-whatsapp"></i>
+                                Send Inquiry via WhatsApp
+                            </button>
+                            <p class="form-disclaimer">
+                                By submitting, you agree to our privacy policy. We'll respond within 24 hours.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-scale-balanced"></i>
+                        </div>
+                        <div class="footer-brand">
+                            
+                        </div>
+                    </div>
+                    <p class="footer-text">
+                        Dedicated to providing exceptional legal services with integrity, professionalism, and client-focused approach.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Practice Areas</h4>
+                    <ul class="footer-list">
+                        <li>Civil Litigation</li>
+                        <li>Criminal Defense</li>
+                        <li>Family Law</li>
+                        <li>Corporate Legal Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-actions">
+                    <a href="tel:8341760104" class="btn" style="background: #2563eb; color: white;">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Now
+                    </a>
+                    <a href="https://wa.me/918341760104?text=Hello%20Advocate%20J.%20Rajashekar%20Yadav%2C%20I%20need%20legal%20consultation." target="_blank" class="btn" style="background: #16a34a; color: white;">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Chat
+                    </a>
+                </div>
+                <div class="footer-copy">
+                    <p>© 2025 J. Rajashekar Yadav, Advocate. All rights reserved.</p>
+                    <p>Disclaimer: Attorney Advertising. Past results do not guarantee future outcomes.</p>
+                    <p style="font-weight: 600; color: #94a3b8; padding-top: 0.5rem;">Developed by S Althaf (Web Techy) <br>
+                        Contact:<span><a href="tel:6305010479" style="color: #ff0000; text-decoration: underline;font-size: large;"><b>Call Now</b></a></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918341760104?text=Hello%20Advocate%20J.%20Rajashekar%20Yadav%2C%20I%20need%20legal%20consultation." target="_blank" class="floating-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Case Evaluation Modal -->
+    <div id="inquiry-modal" class="modal-overlay">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Free Case Evaluation</h3>
+                <button id="close-inquiry-btn" class="offcanvas-close" style="background: #f1f5f9; color: var(--gray);">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p style="color: var(--gray); margin-bottom: 1.5rem; font-size: 0.875rem;">Fill out this form and we'll contact you within 24 hours to discuss your case confidentially.</p>
+                <form id="modal-inquiry-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="modal-name" class="form-label">Full Name *</label>
+                            <input type="text" id="modal-name" name="name" required="" class="form-input" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="modal-phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="modal-phone" name="phone" required="" class="form-input" placeholder="Your Phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-email" class="form-label">Email Address *</label>
+                        <input type="email" id="modal-email" name="email" required="" class="form-input" placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-case-type" class="form-label">Case Type</label>
+                        <select id="modal-case-type" name="case-type" class="form-select">
+                            <option value="">Select Case Type</option>
+                            <option value="Civil Litigation">Civil Litigation</option>
+                            <option value="Criminal Defense">Criminal Defense</option>
+                            <option value="Family Law">Family Law</option>
+                            <option value="Corporate Law">Corporate Law</option>
+                            <option value="Property Law">Property Law</option>
+                            <option value="Consumer Protection">Consumer Protection</option>
+                            <option value="Motor Accident Claims (MACT)">Motor Accident Claims (MACT)</option>
+                            <option value="Agreements &amp; Documentation">Agreements &amp; Documentation</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-message" class="form-label">Case Details *</label>
+                        <textarea id="modal-message" name="message" rows="4" required="" class="form-textarea" placeholder="Briefly describe your legal matter..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 0.75rem;">
+                        <i class="fab fa-whatsapp"></i>
+                        Submit via WhatsApp
+                    </button>
+                    <p style="font-size: 0.75rem; color: #64748b; text-align: center; margin-top: 1rem;">
+                        Your information is confidential and protected by attorney-client privilege.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
