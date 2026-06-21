@@ -500,6 +500,16 @@
         min-height: 2.5rem;
     }
 
+    .hero-certification {
+        display: block;
+        width: fit-content;
+        color: var(--gray);
+        font-size: 0.8rem;
+        font-weight: 900;
+        letter-spacing: 0.09rem;
+        color:#08650d;
+    }
+
     .typewriter {
         display: inline-block;
     }
